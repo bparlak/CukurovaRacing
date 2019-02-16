@@ -1,0 +1,49 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{site.title}}</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/brands.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/solid.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/galeri.css">
+    <link rel="stylesheet" type="text/css" href="/assets/dist/ekko-lightbox.css">
+    <link rel="stylesheet" href="/assets/css/jquery.classycountdown.css" />
+    <link href="/assets/css/countdown.css" rel="stylesheet">
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Jura');
+</style>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+        <div class="logo"></div>
+        <div id="loader">
+        </div>
+    </div>
+
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+    <script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script><!--wrapper için -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/fontawesome.min.js"></script>
+    <script src="/assets/js/brands.min.js"></script>
+    <script src="/assets/js/solid.min.js"></script>
+    <script src="/assets/dist/ekko-lightbox.min.js"></script>
+
+  </body>
+</html>

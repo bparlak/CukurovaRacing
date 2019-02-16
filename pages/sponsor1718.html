@@ -1,0 +1,59 @@
+---
+permalink: "/sponsor1718/"
+---
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+              <div class="title_sec">
+                <table class="table table-bordered table-hover table-dark text-center linkSponsor">
+                  <tr>
+                    <td><h2><a href="{% link pages/sponsor1617.html%}">2016-2017</a></h2></td>
+                    <td><h2><a href="{% link pages/sponsor1718.html%}">2017-2018</a></h2></td>
+                    <td><h2><a href="{% link pages/sponsor1819.html%}">2018-2019</a></h2></td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+          <div class="sponsorImages text-center">
+              <img src="/assets/img/temsa.png" class="col-lg-4 col-md-8 col-sm-10 col-xs-10 anasponsorImages" alt="{{file.name}}">
+              <img src="/assets/img/has.png" class="col-lg-4 col-md-8 col-sm-10 col-xs-10 anasponsorImages" alt="{{file.name}}">
+              <img src="/assets/img/turan.png" class="col-lg-4 col-md-8 col-sm-10 col-xs-10 anasponsorImages" alt="{{file.name}}">
+              <div>
+              {% for file in site.static_files %}
+                {% if file.path contains 'img/sponsor1718' %}
+                  <img src="{{file.path}}" class="col-lg-3 col-md-6 col-sm-10 col-xs-10" alt="{{file.name}}">
+                {% endif %}
+              {% endfor %}
+          </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+<!--
+
+  <img src="/assets/img/sponsor1718/adanabel.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/ato.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+
+  <img src="/assets/img/sponsor1718/sfk.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/egsozcumetin.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/seyhanbel.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/dowaksa.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/metincomposites.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/themakina.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/bcs.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/daysil.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/serefogullari.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/morza.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/ozmak.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/motorsport.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/4x4anadolu.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/kosanlar.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/kizilaslan.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/aggotoyedek.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/germany.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/cengizmakina.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+  <img src="/assets/img/sponsor1718/narpet.png" class="col-lg-3 col-md-3 col-sm-4 col-xs-12" alt="">
+-->

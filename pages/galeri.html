@@ -1,0 +1,192 @@
+---
+permalink: "/galeri/"
+---
+
+<div class="container">
+       <div class="row">
+       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+           <div class="title_sec">
+               <h1>GALERİ</h1>
+           </div>
+       </div>
+       <div class="text-center mx-auto">
+           <button class="btn btn-default filter-button" data-filter="cra1">CRA-1</button>
+           <button class="btn btn-default filter-button" data-filter="cra2">CRA-2</button>
+           <button class="btn btn-default filter-button" data-filter="etkinlik">Etkinlikler</button>
+           <button class="btn btn-default filter-button" data-filter="lansman">Lansmanlar</button>
+           <button class="btn btn-default filter-button" data-filter="basin">Basında Biz</button>
+           <button class="btn btn-default filter-button" data-filter="calismaalani">Çalışma Alanından</button>
+       </div>
+       </div>
+       <br/>
+
+   <div class="row justify-content-center text-center allImages">
+           {% for file in site.static_files %}
+             {% if file.path contains 'img/cra-1' %}
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter cra1">
+                 <a href="{{file.path}}" data-gallery="cra1" data-min-width="600" data-min-height="600" data-title="2016-2017 Dönemi CRA-1"
+                 data-footer="İlk senesinde yarışmaya katılabilmiş bir araç olarak CRA-1 aracı ve ekibi olarak birçok deneyim elde edildi."
+                 data-toggle="lightbox" data-type="image">
+                    <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+                 </a>
+            </div>
+             {% endif %}
+           {% endfor %}
+           {% for file in site.static_files %}
+             {% if file.path contains 'img/cra-2' %}
+             <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter cra2">
+               <a href="{{file.path}}" data-gallery="cra2" data-min-width="600" data-min-height="600" data-title="2017-2018 Dönemi CRA-2"
+               data-footer="2017-2018 dönemi için katılmış olduğumuz İtalya yarışlarında tüm teknik etapları geçerek geçen seneki aracımızın başarısını daha yukarı taşımış olduk."
+               data-toggle="lightbox" data-type="image">
+                 <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+              </a>
+            </div>
+             {% endif %}
+           {% endfor %}
+           {% for file in site.static_files %}
+             {% if file.path contains 'img/lansman/cra1' %}
+             <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter lansman">
+               <a href="{{file.path}}" data-gallery="lansman" data-title="CRA-1 LANSMANI"
+               data-footer="2016-2017 dönemi araç tanıtımımız."
+               data-toggle="lightbox" data-type="image">
+                 <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+              </a>
+            </div>
+             {% endif %}
+           {% endfor %}
+           {% for file in site.static_files %}
+             {% if file.path contains 'img/lansman/cra2' %}
+             <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter lansman">
+               <a href="{{file.path}}" data-gallery="lansman" data-title="CRA-2 LANSMANI"
+               data-footer="2017-2018 dönemi araç tanıtımımız."
+               data-toggle="lightbox" data-type="image">
+                 <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+              </a>
+            </div>
+             {% endif %}
+           {% endfor %}
+           {% for file in site.static_files %}
+             {% if file.path contains 'img/basin' %}
+             <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter basin">
+               <a href="{{file.path}}" data-gallery="basin" data-title="BASINDA ÇUKUROVA RACING"
+               data-footer=""
+               data-toggle="lightbox" data-type="image">
+                 <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+              </a>
+            </div>
+             {% endif %}
+           {% endfor %}
+           <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+             <a href="/assets/img/etkinlikler/unistand.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+             data-footer="Üniversite klüp standları"
+             data-toggle="lightbox" data-type="image">
+               <img src="/assets/img/etkinlikler/unistand.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/themakina.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="The Makina'nın takımımızı ziyareti"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/themakina.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/dmanco1.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Doğukan MANÇO'nun takımımızı ziyareti"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/dmanco1.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/ademir1.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Adana Demirspor maçında aracımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/ademir1.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/ademir2.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Adana Demirspor maçında aracımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/ademir2.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/m1.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="M1 ADANA'da araç tanıtım standımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/m1.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/m2.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="M1 ADANA'da araç tanıtım standımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/m2.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/m3.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="M1 ADANA'da araç tanıtım standımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/m3.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/imsec.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="IMSEC(International Mediterranean Science Engineering Congress)"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/imsec.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/fiat.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Fiat İleri Teknik Sürüş Eğitimi Konferansında aracımız"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/fiat.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/ory.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Oryantasyon sunumu"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/ory.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+          <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter etkinlik">
+              <a href="/assets/img/etkinlikler/ralli.jpg" data-gallery="etkinlik" data-title="TAKIM ETKİNLİKLERİMİZ"
+              data-footer="Ralli Pilotu Sürüş Eğitimi"
+              data-toggle="lightbox" data-type="image">
+                <img src="/assets/img/etkinlikler/ralli.jpg" class="img-fluid" alt="">
+             </a>
+          </div>
+
+          {% for file in site.static_files %}
+            {% if file.path contains 'img/calismaalani' %}
+               <div class="gallery_product col-lg-3 col-md-4 col-sm-5 col-xs-8 filter calismaalani">
+                    <a href="{{file.path}}" data-gallery="calismaalani" data-min-width="600" data-min-height="600" data-title="Çalışma Alanından Kareler"
+                     data-footer=""
+                     data-toggle="lightbox" data-type="image">
+                     <img src="{{file.path}}" class="img-fluid" alt="{{file.name}}">
+                    </a>
+               </div>
+            {% endif %}
+          {% endfor %}
+
+       </div>
+   </div>
+</section>
+
+
+
+<script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/galeri.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function () {
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+});
+</script>
